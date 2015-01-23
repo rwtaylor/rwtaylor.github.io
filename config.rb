@@ -22,6 +22,7 @@ end
 ###
 # Page options, layouts, aliases and proxies
 ###
+set :html, :layout_engine => :erb
 
 # Per-page layout changes:
 #

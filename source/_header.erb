@@ -1,0 +1,26 @@
+<img id="left-leap" class="leap" src="<% data.header.left_image.src %>" alt="<% data.header.left_image.src %>">
+<img id="right-leap" class="leap" src="<% data.header.right_image.src %>" alt="<% data.header.right_image.src %>">
+
+<div id="header_title">
+	<h1><span class="nobr"><a href=<% data.header.url %> >Ryan <span id="w">W</span>. Taylor</a></span></h1>
+	<div id="subtitles">
+	    <ul class="bjqs">
+	        <% data.header.titles.each do |title| %>
+          <li><h2><%= title %></h2></li>
+          <% end %>
+	    </ul>
+	</div><!-- subtitles -->
+	<hr />
+	<div id="address-cont">
+		<address>
+			<ul>
+				<li><i class="foundicon-phone">&nbsp;</i> <% data.header.phone %> </li>
+				<li><a href="mailto:<% data.header.email %>"><i class="foundicon-mail">&nbsp;</i> <span id="email"><% data.header.email %></span></a></li>
+				<li><a href="<% data.header.cv %>"><i class="foundicon-page">&nbsp;</i> CV </a></li>
+			</u>
+		</address>
+	</div><!-- address-cont -->
+	<div id="headshot-cont">
+				<img id="headshot" src="<% data.header.headshot.src %>" alt="<% data.header.headshot.alt %>">
+	</div><!-- rwt-cont -->
+</div><!-- title_container -->
