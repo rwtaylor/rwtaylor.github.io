@@ -1,0 +1,21 @@
+url: "http://ryantaylor.net"
+email: "ryan@ryantaylor.net"
+cv: "Ryan%20Taylor's%20CV.pdf"
+phone: "(510) 367-8968"
+twitter: "@rwtaylor"
+github: rwtaylor
+headshot:
+  src: "img/header/Ryan_2014.jpg"
+  alt: "Photo of Dr. Ryan W. Taylor"
+left_image:
+  src: "img/header/Left_leap.jpg"
+  alt: "Squirrel leaping off a bare branch with a radio collar antenna sticking up from its neck."
+right_image:
+  src: "img/header/Right_leap.jpg"
+  alt: "Landing Squirrel"
+subtitles:
+  - EVOLUTIONARY BIOLOGY
+  - QUANTITATIVE GENETICS
+  - BEHAVIORAL ECOLOGY
+  - EVOLUTIONARY GENOMICS
+

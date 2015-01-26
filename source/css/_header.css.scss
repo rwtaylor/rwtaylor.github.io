@@ -1,0 +1,81 @@
+/* Images */
+img.leap {
+  opacity:0.90;filter:alpha(opacity=90);
+  width:227px;
+}
+
+#left-leap{float:left;}
+#right-leap{float:right;}
+
+img.headshot {
+  width: 100px;
+}
+#headshot-div{
+	margin-bottom:3px;
+}
+
+header a:hover img { box-shadow: 0px 0px 0px rgba(0, 0, 0, 0); border-radius: 0px;}
+
+/* Fonts */
+header h1 {
+	font-size:2.75em;
+	font-weight:normal;
+	text-align:center;
+	letter-spacing: 0.05em;
+	padding-top:1em;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+header h1 a { color: #333; }
+header h1 a:hover { color: #000; }
+#tweak-w {
+	letter-spacing: -6px;
+}
+header h2 {
+	font-size:1.2em;
+	font-weight:normal;
+	text-align:center;
+	letter-spacing: 0.1em;
+	color: #222;
+}
+
+/* Other */
+header {
+	overflow:auto;
+	padding-bottom:1em;
+}
+
+header hr {
+	margin-top:2em;
+}
+
+#title-div {
+	max-width:440px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#subtitles {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+/* Anchor link... javascript messes up position??? */
+a.anchor {display: block; position: relative; top: -33px; visibility: hidden;}
+
+/* Basic jQuery Slider essential styles */
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+ul.bjqs {
+	z-index:1000;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+}

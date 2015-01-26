@@ -1,0 +1,17 @@
+<div class="news">
+  <h2>News</h2>
+  <hr />
+  <% data.news.items.each do |item| %>
+    <div class="news-item">
+      <date><%=item.date%></date>
+      <% unless item.image.nil? %>
+        <% if item.no_shadow == true %>
+          <a href='<%=item.link%>'><img class='no_shadow' src='<%=item.image%>'></img></a>
+        <%else%>
+        <a href='<%=item.link%>'><img src='<%=item.image%>'></img></a>
+        <% end %>
+      <% end %>
+      <p><%=item.info%></p>
+    </div>
+  <% end %>
+</div><!-- news -->

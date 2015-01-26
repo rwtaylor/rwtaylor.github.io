@@ -1,0 +1,12 @@
+- name: News
+  link: index.html
+- name: About
+  link: about.html
+- name: Behavioral Ecology
+  link: behavior.html
+- name: Evol. Genomics
+  link: evolgenom.html
+- name: Quantitative Genetics
+  link: quantgene.html
+- name: Photography
+  link: phtos.html

@@ -1,0 +1,23 @@
+<h2>About Me</h2>
+<hr />
+<div id="about-div">
+  <div id="address-div">
+    <address>
+      <ul>
+        <li><%= link_to '<i class="step fi-social-twitter">&nbsp;</i>' + data.header.twitter, 'http://twitter.com/' + data.header.twitter %> </li>
+        <li><a href="mailto:<%= data.header.email %>"><i class="step fi-mail">&nbsp;</i> <span id="email"><%= data.header.email %></span></a></li>
+        <li><%= link_to '<i class="step fi-social-github">&nbsp;</i>' + data.header.github, 'http://github.com/' + data.header.github %> </li>
+        <li><a href="<%= data.header.cv %>"><i class="step fi-page-pdf">&nbsp;</i> CV </a></li>
+      </ul>
+    </address>
+  </div><!-- address-div -->
+  <div id="headshot-div">
+    <img id="headshot" src="<%= data.header.headshot.src %>" alt="<%= data.header.headshot.alt %>">
+  </div><!-- headshot-div -->
+</div><!-- about-div -->
+
+<p>
+  I study evolution in wild populations on a contemporary time scale. I am currently a postdoc in <a href="http://petrov.stanford.edu">Dmitri Petrov's</a> lab at Stanford University, where I am investigating fluctuating selection on <em>Drosophila spp.</em> in response to seasonal variaiton. I am also working on applying population genomics techniques to the <a href="http://www.redsquirrel.ca">Kluane Red Squirrel Project</a>.
+</p>
+<p>My PhD investigated the evolutionary maintenence of personality in a wild population of red squirrels. I was advised by <a href="http://www.uoguelph.ca/ib/people/faculty/mcadam.shtml">Andrew McAdam</a> at the University of Guelph and <a href="http://hyenas.zoology.msu.edu/">Kay Holekamp</a> at Michigan State University.
+</p>

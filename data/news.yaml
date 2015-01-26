@@ -1,0 +1,18 @@
+items:
+  - date: "January 20, 2015"
+    info: "<a href='http://www.redsquirels.ca'>KRSP</a> squirrel DNA has arrived; we will genotype the 125 individuals in this pedigree to build a linkage map for red squirrels."
+    image: img/news/request_01_15.png
+    link: img/news/request_01_15.pdf
+  - date: "December 23, 2014"
+    info: "We have been awarded a grant from the <a href = 'www.rhinos.org'>International Rhino Foundation</a> to genotype over 800 black rhinos! We will use this information to study genetic diversity, population structure and reproductive success of black rhinos in Zimbabwe and South Africa."
+    image: img/news/pub_logo.png
+    link: http://rhinos.org
+    no_shadow: true
+  - date: "November 25, 2014"
+    info: "My photo of a juvenile red squirrel is on <a href ='img/published/jeb_v27_i11_OFC.jpg'> the cover </a> of this month's JEB!"
+    image: img/news/jeb_v27_i11_OFC_200w.jpg
+    link: img/news/jeb_v27_i11_OFC.jpg
+  - date: "September 05, 2014"
+    info: 'Our paper "Selection on female behaviour fluctuates with offspring environment" has been accepted by the Journal of Evolutionary biology! <a href = "http://dx.doi.org/10.1111/jeb.12495">Now published!</a>'
+  - date: "September 04, 2014"
+    info: 'Our paper "Illumina TruSeq synthetic long-reads empower de novo assembly and resolve complex, highly repetitive transposable elements" is published! <a href = "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0106689">PLoS ONE</a>.'

@@ -1,3 +1,14 @@
 # robotstxt.org/
 
 User-agent: *
+Disallow: /ms.html
+Disallow: /capay_crush.html
+Disallow: /dantzer-science.html
+Disallow: /rowan-sink.html
+Disallow: /reds.html
+Disallow: /ms/Taylor_selection_submission.pdf
+Disallow: /ms/Selection Analysis.pdf
+Disallow: /ms/Taylor 2012 SI.zip
+Disallow: /analyses/*
+Disallow: /krsp_selection/*
+Disallow: /shiny.html
