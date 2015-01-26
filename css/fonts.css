@@ -1,0 +1,50 @@
+/* ZURB Foundation fonts */
+@font-face {
+  font-family: "GeneralFoundicons";
+  src: url("../fonts/general_foundicons.eot");
+  src: url("../fonts/general_foundicons.eot?#iefix") format("embedded-opentype"), url("../fonts/general_foundicons.woff") format("woff"), url("../fonts/general_foundicons.ttf") format("truetype"), url("../fonts/general_foundicons.svg#GeneralFoundicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Linux Libertine fonts */
+@font-face {
+  font-family: 'LinuxLibertineORegular';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.svg#LinuxLibertineORegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOItalic';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.svg#LinuxLibertineOItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOSemibold';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.svg#LinuxLibertineOSemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOSemiboldItalic';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.svg#LinuxLibertineOSemiboldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOBold';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.svg#LinuxLibertineOBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOBoldItalic';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.svg#LinuxLibertineOBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineMonoOMono';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.svg#LinuxLibertineMonoOMono") format("svg");
+  font-weight: normal;
+  font-style: normal; }

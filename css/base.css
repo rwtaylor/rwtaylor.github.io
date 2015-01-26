@@ -1,0 +1,44 @@
+/* Base styles */
+/* line 3, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+body {
+  background-color: white;
+  color: #1A1A1A;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 5, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "LinuxLibertineORegular", "Times New Roman", Times, serif; }
+
+/* line 7, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+a {
+  color: #757575;
+  text-decoration: none; }
+
+/* line 8, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+a:hover {
+  color: #565656;
+  shadow: 0px 0px 2px black; }
+
+/* line 10, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+i {
+  font-style: normal;
+  top: 0.2em;
+  position: relative; }
+
+/* line 12, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+p {
+  font-size: 1.2em; }
+
+/* line 13, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+p + p {
+  text-indent: 1em;
+  margin-top: 0; }
+
+/* line 14, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+p + a + p {
+  text-indent: 1em;
+  margin-top: 0; }
+
+/* line 16, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+.spacer {
+  height: 3em; }

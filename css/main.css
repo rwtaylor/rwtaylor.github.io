@@ -1,0 +1,2149 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 14, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+/* line 22, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 33, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 38, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 47, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 60, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 68, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 78, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 86, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* Base styles */
+/* line 3, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+body {
+  background-color: white;
+  color: #1A1A1A;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 5, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "LinuxLibertineORegular", "Times New Roman", Times, serif; }
+
+/* line 7, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+a {
+  color: #757575;
+  text-decoration: none; }
+
+/* line 8, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+a:hover {
+  color: #565656;
+  shadow: 0px 0px 2px black; }
+
+/* line 10, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+i {
+  font-style: normal;
+  top: 0.2em;
+  position: relative; }
+
+/* line 12, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+p {
+  font-size: 1.2em; }
+
+/* line 13, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+p + p {
+  text-indent: 1em;
+  margin-top: 0; }
+
+/* line 14, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+p + a + p {
+  text-indent: 1em;
+  margin-top: 0; }
+
+/* line 16, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/base.css.scss */
+.spacer {
+  height: 3em; }
+
+/* ZURB Foundation fonts */
+@font-face {
+  font-family: "GeneralFoundicons";
+  src: url("../fonts/general_foundicons.eot");
+  src: url("../fonts/general_foundicons.eot?#iefix") format("embedded-opentype"), url("../fonts/general_foundicons.woff") format("woff"), url("../fonts/general_foundicons.ttf") format("truetype"), url("../fonts/general_foundicons.svg#GeneralFoundicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Linux Libertine fonts */
+@font-face {
+  font-family: 'LinuxLibertineORegular';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_R-webfont.svg#LinuxLibertineORegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOItalic';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RI-webfont.svg#LinuxLibertineOItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOSemibold';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZ-webfont.svg#LinuxLibertineOSemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOSemiboldItalic';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RZI-webfont.svg#LinuxLibertineOSemiboldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOBold';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RB-webfont.svg#LinuxLibertineOBold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineOBoldItalic';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_RBI-webfont.svg#LinuxLibertineOBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'LinuxLibertineMonoOMono';
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.eot");
+  src: url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.woff") format("woff"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.ttf") format("truetype"), url("../fonts/Linux-Libertine-fontfacekit/LinLibertine_M-webfont.svg#LinuxLibertineMonoOMono") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* 
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+/* line 8, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.step {
+  display: inline-block;
+  line-height: 1;
+  width: 10%;
+  top: 0.1em; }
+
+@font-face {
+  font-family: "foundation-icons";
+  src: url("../fonts/foundation-icons/foundation-icons.eot");
+  src: url("../fonts/foundation-icons/foundation-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/foundation-icons/foundation-icons.woff") format("woff"), url("../fonts/foundation-icons/foundation-icons.ttf") format("truetype"), url("../fonts/foundation-icons/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 26, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-address-book:before,
+.fi-alert:before,
+.fi-align-center:before,
+.fi-align-justify:before,
+.fi-align-left:before,
+.fi-align-right:before,
+.fi-anchor:before,
+.fi-annotate:before,
+.fi-archive:before,
+.fi-arrow-down:before,
+.fi-arrow-left:before,
+.fi-arrow-right:before,
+.fi-arrow-up:before,
+.fi-arrows-compress:before,
+.fi-arrows-expand:before,
+.fi-arrows-in:before,
+.fi-arrows-out:before,
+.fi-asl:before,
+.fi-asterisk:before,
+.fi-at-sign:before,
+.fi-background-color:before,
+.fi-battery-empty:before,
+.fi-battery-full:before,
+.fi-battery-half:before,
+.fi-bitcoin-circle:before,
+.fi-bitcoin:before,
+.fi-blind:before,
+.fi-bluetooth:before,
+.fi-bold:before,
+.fi-book-bookmark:before,
+.fi-book:before,
+.fi-bookmark:before,
+.fi-braille:before,
+.fi-burst-new:before,
+.fi-burst-sale:before,
+.fi-burst:before,
+.fi-calendar:before,
+.fi-camera:before,
+.fi-check:before,
+.fi-checkbox:before,
+.fi-clipboard-notes:before,
+.fi-clipboard-pencil:before,
+.fi-clipboard:before,
+.fi-clock:before,
+.fi-closed-caption:before,
+.fi-cloud:before,
+.fi-comment-minus:before,
+.fi-comment-quotes:before,
+.fi-comment-video:before,
+.fi-comment:before,
+.fi-comments:before,
+.fi-compass:before,
+.fi-contrast:before,
+.fi-credit-card:before,
+.fi-crop:before,
+.fi-crown:before,
+.fi-css3:before,
+.fi-database:before,
+.fi-die-five:before,
+.fi-die-four:before,
+.fi-die-one:before,
+.fi-die-six:before,
+.fi-die-three:before,
+.fi-die-two:before,
+.fi-dislike:before,
+.fi-dollar-bill:before,
+.fi-dollar:before,
+.fi-download:before,
+.fi-eject:before,
+.fi-elevator:before,
+.fi-euro:before,
+.fi-eye:before,
+.fi-fast-forward:before,
+.fi-female-symbol:before,
+.fi-female:before,
+.fi-filter:before,
+.fi-first-aid:before,
+.fi-flag:before,
+.fi-folder-add:before,
+.fi-folder-lock:before,
+.fi-folder:before,
+.fi-foot:before,
+.fi-foundation:before,
+.fi-graph-bar:before,
+.fi-graph-horizontal:before,
+.fi-graph-pie:before,
+.fi-graph-trend:before,
+.fi-guide-dog:before,
+.fi-hearing-aid:before,
+.fi-heart:before,
+.fi-home:before,
+.fi-html5:before,
+.fi-indent-less:before,
+.fi-indent-more:before,
+.fi-info:before,
+.fi-italic:before,
+.fi-key:before,
+.fi-laptop:before,
+.fi-layout:before,
+.fi-lightbulb:before,
+.fi-like:before,
+.fi-link:before,
+.fi-list-bullet:before,
+.fi-list-number:before,
+.fi-list-thumbnails:before,
+.fi-list:before,
+.fi-lock:before,
+.fi-loop:before,
+.fi-magnifying-glass:before,
+.fi-mail:before,
+.fi-male-female:before,
+.fi-male-symbol:before,
+.fi-male:before,
+.fi-map:before,
+.fi-marker:before,
+.fi-megaphone:before,
+.fi-microphone:before,
+.fi-minus-circle:before,
+.fi-minus:before,
+.fi-mobile-signal:before,
+.fi-mobile:before,
+.fi-monitor:before,
+.fi-mountains:before,
+.fi-music:before,
+.fi-next:before,
+.fi-no-dogs:before,
+.fi-no-smoking:before,
+.fi-page-add:before,
+.fi-page-copy:before,
+.fi-page-csv:before,
+.fi-page-delete:before,
+.fi-page-doc:before,
+.fi-page-edit:before,
+.fi-page-export-csv:before,
+.fi-page-export-doc:before,
+.fi-page-export-pdf:before,
+.fi-page-export:before,
+.fi-page-filled:before,
+.fi-page-multiple:before,
+.fi-page-pdf:before,
+.fi-page-remove:before,
+.fi-page-search:before,
+.fi-page:before,
+.fi-paint-bucket:before,
+.fi-paperclip:before,
+.fi-pause:before,
+.fi-paw:before,
+.fi-paypal:before,
+.fi-pencil:before,
+.fi-photo:before,
+.fi-play-circle:before,
+.fi-play-video:before,
+.fi-play:before,
+.fi-plus:before,
+.fi-pound:before,
+.fi-power:before,
+.fi-previous:before,
+.fi-price-tag:before,
+.fi-pricetag-multiple:before,
+.fi-print:before,
+.fi-prohibited:before,
+.fi-projection-screen:before,
+.fi-puzzle:before,
+.fi-quote:before,
+.fi-record:before,
+.fi-refresh:before,
+.fi-results-demographics:before,
+.fi-results:before,
+.fi-rewind-ten:before,
+.fi-rewind:before,
+.fi-rss:before,
+.fi-safety-cone:before,
+.fi-save:before,
+.fi-share:before,
+.fi-sheriff-badge:before,
+.fi-shield:before,
+.fi-shopping-bag:before,
+.fi-shopping-cart:before,
+.fi-shuffle:before,
+.fi-skull:before,
+.fi-social-500px:before,
+.fi-social-adobe:before,
+.fi-social-amazon:before,
+.fi-social-android:before,
+.fi-social-apple:before,
+.fi-social-behance:before,
+.fi-social-bing:before,
+.fi-social-blogger:before,
+.fi-social-delicious:before,
+.fi-social-designer-news:before,
+.fi-social-deviant-art:before,
+.fi-social-digg:before,
+.fi-social-dribbble:before,
+.fi-social-drive:before,
+.fi-social-dropbox:before,
+.fi-social-evernote:before,
+.fi-social-facebook:before,
+.fi-social-flickr:before,
+.fi-social-forrst:before,
+.fi-social-foursquare:before,
+.fi-social-game-center:before,
+.fi-social-github:before,
+.fi-social-google-plus:before,
+.fi-social-hacker-news:before,
+.fi-social-hi5:before,
+.fi-social-instagram:before,
+.fi-social-joomla:before,
+.fi-social-lastfm:before,
+.fi-social-linkedin:before,
+.fi-social-medium:before,
+.fi-social-myspace:before,
+.fi-social-orkut:before,
+.fi-social-path:before,
+.fi-social-picasa:before,
+.fi-social-pinterest:before,
+.fi-social-rdio:before,
+.fi-social-reddit:before,
+.fi-social-skillshare:before,
+.fi-social-skype:before,
+.fi-social-smashing-mag:before,
+.fi-social-snapchat:before,
+.fi-social-spotify:before,
+.fi-social-squidoo:before,
+.fi-social-stack-overflow:before,
+.fi-social-steam:before,
+.fi-social-stumbleupon:before,
+.fi-social-treehouse:before,
+.fi-social-tumblr:before,
+.fi-social-twitter:before,
+.fi-social-vimeo:before,
+.fi-social-windows:before,
+.fi-social-xbox:before,
+.fi-social-yahoo:before,
+.fi-social-yelp:before,
+.fi-social-youtube:before,
+.fi-social-zerply:before,
+.fi-social-zurb:before,
+.fi-sound:before,
+.fi-star:before,
+.fi-stop:before,
+.fi-strikethrough:before,
+.fi-subscript:before,
+.fi-superscript:before,
+.fi-tablet-landscape:before,
+.fi-tablet-portrait:before,
+.fi-target-two:before,
+.fi-target:before,
+.fi-telephone-accessible:before,
+.fi-telephone:before,
+.fi-text-color:before,
+.fi-thumbnails:before,
+.fi-ticket:before,
+.fi-torso-business:before,
+.fi-torso-female:before,
+.fi-torso:before,
+.fi-torsos-all-female:before,
+.fi-torsos-all:before,
+.fi-torsos-female-male:before,
+.fi-torsos-male-female:before,
+.fi-torsos:before,
+.fi-trash:before,
+.fi-trees:before,
+.fi-trophy:before,
+.fi-underline:before,
+.fi-universal-access:before,
+.fi-unlink:before,
+.fi-unlock:before,
+.fi-upload-cloud:before,
+.fi-upload:before,
+.fi-usb:before,
+.fi-video:before,
+.fi-volume-none:before,
+.fi-volume-strike:before,
+.fi-volume:before,
+.fi-web:before,
+.fi-wheelchair:before,
+.fi-widget:before,
+.fi-wrench:before,
+.fi-x-circle:before,
+.fi-x:before,
+.fi-yen:before,
+.fi-zoom-in:before,
+.fi-zoom-out:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit; }
+
+/* line 320, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-address-book:before {
+  content: "\f100"; }
+
+/* line 321, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-alert:before {
+  content: "\f101"; }
+
+/* line 322, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-align-center:before {
+  content: "\f102"; }
+
+/* line 323, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-align-justify:before {
+  content: "\f103"; }
+
+/* line 324, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-align-left:before {
+  content: "\f104"; }
+
+/* line 325, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-align-right:before {
+  content: "\f105"; }
+
+/* line 326, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-anchor:before {
+  content: "\f106"; }
+
+/* line 327, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-annotate:before {
+  content: "\f107"; }
+
+/* line 328, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-archive:before {
+  content: "\f108"; }
+
+/* line 329, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-arrow-down:before {
+  content: "\f109"; }
+
+/* line 330, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-arrow-left:before {
+  content: "\f10a"; }
+
+/* line 331, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-arrow-right:before {
+  content: "\f10b"; }
+
+/* line 332, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-arrow-up:before {
+  content: "\f10c"; }
+
+/* line 333, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-arrows-compress:before {
+  content: "\f10d"; }
+
+/* line 334, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-arrows-expand:before {
+  content: "\f10e"; }
+
+/* line 335, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-arrows-in:before {
+  content: "\f10f"; }
+
+/* line 336, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-arrows-out:before {
+  content: "\f110"; }
+
+/* line 337, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-asl:before {
+  content: "\f111"; }
+
+/* line 338, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-asterisk:before {
+  content: "\f112"; }
+
+/* line 339, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-at-sign:before {
+  content: "\f113"; }
+
+/* line 340, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-background-color:before {
+  content: "\f114"; }
+
+/* line 341, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-battery-empty:before {
+  content: "\f115"; }
+
+/* line 342, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-battery-full:before {
+  content: "\f116"; }
+
+/* line 343, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-battery-half:before {
+  content: "\f117"; }
+
+/* line 344, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-bitcoin-circle:before {
+  content: "\f118"; }
+
+/* line 345, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-bitcoin:before {
+  content: "\f119"; }
+
+/* line 346, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-blind:before {
+  content: "\f11a"; }
+
+/* line 347, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-bluetooth:before {
+  content: "\f11b"; }
+
+/* line 348, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-bold:before {
+  content: "\f11c"; }
+
+/* line 349, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-book-bookmark:before {
+  content: "\f11d"; }
+
+/* line 350, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-book:before {
+  content: "\f11e"; }
+
+/* line 351, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-bookmark:before {
+  content: "\f11f"; }
+
+/* line 352, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-braille:before {
+  content: "\f120"; }
+
+/* line 353, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-burst-new:before {
+  content: "\f121"; }
+
+/* line 354, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-burst-sale:before {
+  content: "\f122"; }
+
+/* line 355, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-burst:before {
+  content: "\f123"; }
+
+/* line 356, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-calendar:before {
+  content: "\f124"; }
+
+/* line 357, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-camera:before {
+  content: "\f125"; }
+
+/* line 358, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-check:before {
+  content: "\f126"; }
+
+/* line 359, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-checkbox:before {
+  content: "\f127"; }
+
+/* line 360, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-clipboard-notes:before {
+  content: "\f128"; }
+
+/* line 361, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-clipboard-pencil:before {
+  content: "\f129"; }
+
+/* line 362, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-clipboard:before {
+  content: "\f12a"; }
+
+/* line 363, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-clock:before {
+  content: "\f12b"; }
+
+/* line 364, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-closed-caption:before {
+  content: "\f12c"; }
+
+/* line 365, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-cloud:before {
+  content: "\f12d"; }
+
+/* line 366, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-comment-minus:before {
+  content: "\f12e"; }
+
+/* line 367, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-comment-quotes:before {
+  content: "\f12f"; }
+
+/* line 368, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-comment-video:before {
+  content: "\f130"; }
+
+/* line 369, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-comment:before {
+  content: "\f131"; }
+
+/* line 370, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-comments:before {
+  content: "\f132"; }
+
+/* line 371, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-compass:before {
+  content: "\f133"; }
+
+/* line 372, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-contrast:before {
+  content: "\f134"; }
+
+/* line 373, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-credit-card:before {
+  content: "\f135"; }
+
+/* line 374, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-crop:before {
+  content: "\f136"; }
+
+/* line 375, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-crown:before {
+  content: "\f137"; }
+
+/* line 376, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-css3:before {
+  content: "\f138"; }
+
+/* line 377, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-database:before {
+  content: "\f139"; }
+
+/* line 378, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-die-five:before {
+  content: "\f13a"; }
+
+/* line 379, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-die-four:before {
+  content: "\f13b"; }
+
+/* line 380, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-die-one:before {
+  content: "\f13c"; }
+
+/* line 381, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-die-six:before {
+  content: "\f13d"; }
+
+/* line 382, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-die-three:before {
+  content: "\f13e"; }
+
+/* line 383, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-die-two:before {
+  content: "\f13f"; }
+
+/* line 384, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-dislike:before {
+  content: "\f140"; }
+
+/* line 385, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-dollar-bill:before {
+  content: "\f141"; }
+
+/* line 386, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-dollar:before {
+  content: "\f142"; }
+
+/* line 387, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-download:before {
+  content: "\f143"; }
+
+/* line 388, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-eject:before {
+  content: "\f144"; }
+
+/* line 389, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-elevator:before {
+  content: "\f145"; }
+
+/* line 390, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-euro:before {
+  content: "\f146"; }
+
+/* line 391, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-eye:before {
+  content: "\f147"; }
+
+/* line 392, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-fast-forward:before {
+  content: "\f148"; }
+
+/* line 393, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-female-symbol:before {
+  content: "\f149"; }
+
+/* line 394, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-female:before {
+  content: "\f14a"; }
+
+/* line 395, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-filter:before {
+  content: "\f14b"; }
+
+/* line 396, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-first-aid:before {
+  content: "\f14c"; }
+
+/* line 397, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-flag:before {
+  content: "\f14d"; }
+
+/* line 398, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-folder-add:before {
+  content: "\f14e"; }
+
+/* line 399, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-folder-lock:before {
+  content: "\f14f"; }
+
+/* line 400, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-folder:before {
+  content: "\f150"; }
+
+/* line 401, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-foot:before {
+  content: "\f151"; }
+
+/* line 402, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-foundation:before {
+  content: "\f152"; }
+
+/* line 403, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-graph-bar:before {
+  content: "\f153"; }
+
+/* line 404, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-graph-horizontal:before {
+  content: "\f154"; }
+
+/* line 405, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-graph-pie:before {
+  content: "\f155"; }
+
+/* line 406, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-graph-trend:before {
+  content: "\f156"; }
+
+/* line 407, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-guide-dog:before {
+  content: "\f157"; }
+
+/* line 408, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-hearing-aid:before {
+  content: "\f158"; }
+
+/* line 409, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-heart:before {
+  content: "\f159"; }
+
+/* line 410, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-home:before {
+  content: "\f15a"; }
+
+/* line 411, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-html5:before {
+  content: "\f15b"; }
+
+/* line 412, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-indent-less:before {
+  content: "\f15c"; }
+
+/* line 413, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-indent-more:before {
+  content: "\f15d"; }
+
+/* line 414, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-info:before {
+  content: "\f15e"; }
+
+/* line 415, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-italic:before {
+  content: "\f15f"; }
+
+/* line 416, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-key:before {
+  content: "\f160"; }
+
+/* line 417, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-laptop:before {
+  content: "\f161"; }
+
+/* line 418, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-layout:before {
+  content: "\f162"; }
+
+/* line 419, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-lightbulb:before {
+  content: "\f163"; }
+
+/* line 420, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-like:before {
+  content: "\f164"; }
+
+/* line 421, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-link:before {
+  content: "\f165"; }
+
+/* line 422, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-list-bullet:before {
+  content: "\f166"; }
+
+/* line 423, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-list-number:before {
+  content: "\f167"; }
+
+/* line 424, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-list-thumbnails:before {
+  content: "\f168"; }
+
+/* line 425, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-list:before {
+  content: "\f169"; }
+
+/* line 426, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-lock:before {
+  content: "\f16a"; }
+
+/* line 427, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-loop:before {
+  content: "\f16b"; }
+
+/* line 428, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-magnifying-glass:before {
+  content: "\f16c"; }
+
+/* line 429, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-mail:before {
+  content: "\f16d"; }
+
+/* line 430, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-male-female:before {
+  content: "\f16e"; }
+
+/* line 431, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-male-symbol:before {
+  content: "\f16f"; }
+
+/* line 432, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-male:before {
+  content: "\f170"; }
+
+/* line 433, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-map:before {
+  content: "\f171"; }
+
+/* line 434, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-marker:before {
+  content: "\f172"; }
+
+/* line 435, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-megaphone:before {
+  content: "\f173"; }
+
+/* line 436, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-microphone:before {
+  content: "\f174"; }
+
+/* line 437, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-minus-circle:before {
+  content: "\f175"; }
+
+/* line 438, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-minus:before {
+  content: "\f176"; }
+
+/* line 439, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-mobile-signal:before {
+  content: "\f177"; }
+
+/* line 440, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-mobile:before {
+  content: "\f178"; }
+
+/* line 441, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-monitor:before {
+  content: "\f179"; }
+
+/* line 442, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-mountains:before {
+  content: "\f17a"; }
+
+/* line 443, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-music:before {
+  content: "\f17b"; }
+
+/* line 444, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-next:before {
+  content: "\f17c"; }
+
+/* line 445, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-no-dogs:before {
+  content: "\f17d"; }
+
+/* line 446, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-no-smoking:before {
+  content: "\f17e"; }
+
+/* line 447, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-add:before {
+  content: "\f17f"; }
+
+/* line 448, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-copy:before {
+  content: "\f180"; }
+
+/* line 449, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-csv:before {
+  content: "\f181"; }
+
+/* line 450, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-delete:before {
+  content: "\f182"; }
+
+/* line 451, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-doc:before {
+  content: "\f183"; }
+
+/* line 452, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-edit:before {
+  content: "\f184"; }
+
+/* line 453, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-export-csv:before {
+  content: "\f185"; }
+
+/* line 454, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-export-doc:before {
+  content: "\f186"; }
+
+/* line 455, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-export-pdf:before {
+  content: "\f187"; }
+
+/* line 456, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-export:before {
+  content: "\f188"; }
+
+/* line 457, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-filled:before {
+  content: "\f189"; }
+
+/* line 458, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-multiple:before {
+  content: "\f18a"; }
+
+/* line 459, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-pdf:before {
+  content: "\f18b"; }
+
+/* line 460, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-remove:before {
+  content: "\f18c"; }
+
+/* line 461, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page-search:before {
+  content: "\f18d"; }
+
+/* line 462, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-page:before {
+  content: "\f18e"; }
+
+/* line 463, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-paint-bucket:before {
+  content: "\f18f"; }
+
+/* line 464, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-paperclip:before {
+  content: "\f190"; }
+
+/* line 465, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-pause:before {
+  content: "\f191"; }
+
+/* line 466, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-paw:before {
+  content: "\f192"; }
+
+/* line 467, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-paypal:before {
+  content: "\f193"; }
+
+/* line 468, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-pencil:before {
+  content: "\f194"; }
+
+/* line 469, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-photo:before {
+  content: "\f195"; }
+
+/* line 470, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-play-circle:before {
+  content: "\f196"; }
+
+/* line 471, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-play-video:before {
+  content: "\f197"; }
+
+/* line 472, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-play:before {
+  content: "\f198"; }
+
+/* line 473, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-plus:before {
+  content: "\f199"; }
+
+/* line 474, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-pound:before {
+  content: "\f19a"; }
+
+/* line 475, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-power:before {
+  content: "\f19b"; }
+
+/* line 476, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-previous:before {
+  content: "\f19c"; }
+
+/* line 477, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-price-tag:before {
+  content: "\f19d"; }
+
+/* line 478, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-pricetag-multiple:before {
+  content: "\f19e"; }
+
+/* line 479, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-print:before {
+  content: "\f19f"; }
+
+/* line 480, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-prohibited:before {
+  content: "\f1a0"; }
+
+/* line 481, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-projection-screen:before {
+  content: "\f1a1"; }
+
+/* line 482, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-puzzle:before {
+  content: "\f1a2"; }
+
+/* line 483, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-quote:before {
+  content: "\f1a3"; }
+
+/* line 484, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-record:before {
+  content: "\f1a4"; }
+
+/* line 485, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-refresh:before {
+  content: "\f1a5"; }
+
+/* line 486, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-results-demographics:before {
+  content: "\f1a6"; }
+
+/* line 487, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-results:before {
+  content: "\f1a7"; }
+
+/* line 488, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-rewind-ten:before {
+  content: "\f1a8"; }
+
+/* line 489, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-rewind:before {
+  content: "\f1a9"; }
+
+/* line 490, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-rss:before {
+  content: "\f1aa"; }
+
+/* line 491, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-safety-cone:before {
+  content: "\f1ab"; }
+
+/* line 492, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-save:before {
+  content: "\f1ac"; }
+
+/* line 493, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-share:before {
+  content: "\f1ad"; }
+
+/* line 494, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-sheriff-badge:before {
+  content: "\f1ae"; }
+
+/* line 495, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-shield:before {
+  content: "\f1af"; }
+
+/* line 496, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-shopping-bag:before {
+  content: "\f1b0"; }
+
+/* line 497, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-shopping-cart:before {
+  content: "\f1b1"; }
+
+/* line 498, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-shuffle:before {
+  content: "\f1b2"; }
+
+/* line 499, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-skull:before {
+  content: "\f1b3"; }
+
+/* line 500, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-500px:before {
+  content: "\f1b4"; }
+
+/* line 501, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-adobe:before {
+  content: "\f1b5"; }
+
+/* line 502, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-amazon:before {
+  content: "\f1b6"; }
+
+/* line 503, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-android:before {
+  content: "\f1b7"; }
+
+/* line 504, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-apple:before {
+  content: "\f1b8"; }
+
+/* line 505, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-behance:before {
+  content: "\f1b9"; }
+
+/* line 506, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-bing:before {
+  content: "\f1ba"; }
+
+/* line 507, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-blogger:before {
+  content: "\f1bb"; }
+
+/* line 508, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-delicious:before {
+  content: "\f1bc"; }
+
+/* line 509, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-designer-news:before {
+  content: "\f1bd"; }
+
+/* line 510, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-deviant-art:before {
+  content: "\f1be"; }
+
+/* line 511, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-digg:before {
+  content: "\f1bf"; }
+
+/* line 512, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-dribbble:before {
+  content: "\f1c0"; }
+
+/* line 513, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-drive:before {
+  content: "\f1c1"; }
+
+/* line 514, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-dropbox:before {
+  content: "\f1c2"; }
+
+/* line 515, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-evernote:before {
+  content: "\f1c3"; }
+
+/* line 516, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-facebook:before {
+  content: "\f1c4"; }
+
+/* line 517, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-flickr:before {
+  content: "\f1c5"; }
+
+/* line 518, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-forrst:before {
+  content: "\f1c6"; }
+
+/* line 519, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-foursquare:before {
+  content: "\f1c7"; }
+
+/* line 520, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-game-center:before {
+  content: "\f1c8"; }
+
+/* line 521, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-github:before {
+  content: "\f1c9"; }
+
+/* line 522, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-google-plus:before {
+  content: "\f1ca"; }
+
+/* line 523, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-hacker-news:before {
+  content: "\f1cb"; }
+
+/* line 524, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-hi5:before {
+  content: "\f1cc"; }
+
+/* line 525, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-instagram:before {
+  content: "\f1cd"; }
+
+/* line 526, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-joomla:before {
+  content: "\f1ce"; }
+
+/* line 527, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-lastfm:before {
+  content: "\f1cf"; }
+
+/* line 528, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-linkedin:before {
+  content: "\f1d0"; }
+
+/* line 529, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-medium:before {
+  content: "\f1d1"; }
+
+/* line 530, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-myspace:before {
+  content: "\f1d2"; }
+
+/* line 531, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-orkut:before {
+  content: "\f1d3"; }
+
+/* line 532, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-path:before {
+  content: "\f1d4"; }
+
+/* line 533, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-picasa:before {
+  content: "\f1d5"; }
+
+/* line 534, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-pinterest:before {
+  content: "\f1d6"; }
+
+/* line 535, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-rdio:before {
+  content: "\f1d7"; }
+
+/* line 536, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-reddit:before {
+  content: "\f1d8"; }
+
+/* line 537, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-skillshare:before {
+  content: "\f1d9"; }
+
+/* line 538, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-skype:before {
+  content: "\f1da"; }
+
+/* line 539, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-smashing-mag:before {
+  content: "\f1db"; }
+
+/* line 540, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-snapchat:before {
+  content: "\f1dc"; }
+
+/* line 541, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-spotify:before {
+  content: "\f1dd"; }
+
+/* line 542, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-squidoo:before {
+  content: "\f1de"; }
+
+/* line 543, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-stack-overflow:before {
+  content: "\f1df"; }
+
+/* line 544, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-steam:before {
+  content: "\f1e0"; }
+
+/* line 545, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-stumbleupon:before {
+  content: "\f1e1"; }
+
+/* line 546, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-treehouse:before {
+  content: "\f1e2"; }
+
+/* line 547, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-tumblr:before {
+  content: "\f1e3"; }
+
+/* line 548, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-twitter:before {
+  content: "\f1e4"; }
+
+/* line 549, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-vimeo:before {
+  content: "\f1e5"; }
+
+/* line 550, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-windows:before {
+  content: "\f1e6"; }
+
+/* line 551, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-xbox:before {
+  content: "\f1e7"; }
+
+/* line 552, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-yahoo:before {
+  content: "\f1e8"; }
+
+/* line 553, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-yelp:before {
+  content: "\f1e9"; }
+
+/* line 554, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-youtube:before {
+  content: "\f1ea"; }
+
+/* line 555, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-zerply:before {
+  content: "\f1eb"; }
+
+/* line 556, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-social-zurb:before {
+  content: "\f1ec"; }
+
+/* line 557, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-sound:before {
+  content: "\f1ed"; }
+
+/* line 558, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-star:before {
+  content: "\f1ee"; }
+
+/* line 559, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-stop:before {
+  content: "\f1ef"; }
+
+/* line 560, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-strikethrough:before {
+  content: "\f1f0"; }
+
+/* line 561, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-subscript:before {
+  content: "\f1f1"; }
+
+/* line 562, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-superscript:before {
+  content: "\f1f2"; }
+
+/* line 563, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-tablet-landscape:before {
+  content: "\f1f3"; }
+
+/* line 564, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-tablet-portrait:before {
+  content: "\f1f4"; }
+
+/* line 565, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-target-two:before {
+  content: "\f1f5"; }
+
+/* line 566, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-target:before {
+  content: "\f1f6"; }
+
+/* line 567, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-telephone-accessible:before {
+  content: "\f1f7"; }
+
+/* line 568, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-telephone:before {
+  content: "\f1f8"; }
+
+/* line 569, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-text-color:before {
+  content: "\f1f9"; }
+
+/* line 570, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-thumbnails:before {
+  content: "\f1fa"; }
+
+/* line 571, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-ticket:before {
+  content: "\f1fb"; }
+
+/* line 572, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-torso-business:before {
+  content: "\f1fc"; }
+
+/* line 573, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-torso-female:before {
+  content: "\f1fd"; }
+
+/* line 574, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-torso:before {
+  content: "\f1fe"; }
+
+/* line 575, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-torsos-all-female:before {
+  content: "\f1ff"; }
+
+/* line 576, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-torsos-all:before {
+  content: "\f200"; }
+
+/* line 577, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-torsos-female-male:before {
+  content: "\f201"; }
+
+/* line 578, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-torsos-male-female:before {
+  content: "\f202"; }
+
+/* line 579, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-torsos:before {
+  content: "\f203"; }
+
+/* line 580, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-trash:before {
+  content: "\f204"; }
+
+/* line 581, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-trees:before {
+  content: "\f205"; }
+
+/* line 582, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-trophy:before {
+  content: "\f206"; }
+
+/* line 583, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-underline:before {
+  content: "\f207"; }
+
+/* line 584, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-universal-access:before {
+  content: "\f208"; }
+
+/* line 585, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-unlink:before {
+  content: "\f209"; }
+
+/* line 586, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-unlock:before {
+  content: "\f20a"; }
+
+/* line 587, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-upload-cloud:before {
+  content: "\f20b"; }
+
+/* line 588, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-upload:before {
+  content: "\f20c"; }
+
+/* line 589, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-usb:before {
+  content: "\f20d"; }
+
+/* line 590, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-video:before {
+  content: "\f20e"; }
+
+/* line 591, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-volume-none:before {
+  content: "\f20f"; }
+
+/* line 592, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-volume-strike:before {
+  content: "\f210"; }
+
+/* line 593, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-volume:before {
+  content: "\f211"; }
+
+/* line 594, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-web:before {
+  content: "\f212"; }
+
+/* line 595, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-wheelchair:before {
+  content: "\f213"; }
+
+/* line 596, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-widget:before {
+  content: "\f214"; }
+
+/* line 597, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-wrench:before {
+  content: "\f215"; }
+
+/* line 598, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-x-circle:before {
+  content: "\f216"; }
+
+/* line 599, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-x:before {
+  content: "\f217"; }
+
+/* line 600, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-yen:before {
+  content: "\f218"; }
+
+/* line 601, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-zoom-in:before {
+  content: "\f219"; }
+
+/* line 602, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/foundation-icons.css.scss */
+.fi-zoom-out:before {
+  content: "\f21a"; }
+
+/* Page shadow */
+/* line 3, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/page.css.scss */
+.page {
+  margin-bottom: 500px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: white;
+  min-height: 1060px;
+  position: relative;
+  display: block;
+  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+  max-width: 940px; }
+
+/* line 16, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/page.css.scss */
+.page:before,
+.page:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 9px;
+  top: 3px;
+  width: 50%;
+  height: 800px;
+  box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.5);
+  -webkit-transform: skew(1deg) rotate(0deg);
+  -moz-transform: skew(1deg) rotate(0deg);
+  -ms-transform: skew(1deg) rotate(0deg);
+  -o-transform: skew(1deg) rotate(0deg);
+  transform: skew(1deg) rotate(0deg); }
+
+/* line 32, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/page.css.scss */
+.page:after {
+  left: auto;
+  right: 9px;
+  box-shadow: 2px -2px 8px rgba(0, 0, 0, 0.5);
+  -webkit-transform: skew(-1deg) rotate(0deg);
+  -moz-transform: skew(-1deg) rotate(0deg);
+  -ms-transform: skew(-1deg) rotate(0deg);
+  -o-transform: skew(-1deg) rotate(0deg);
+  transform: skew(-1deg) rotate(0deg); }
+
+/* Content */
+/* line 44, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/page.css.scss */
+.content {
+  margin-top: 1em;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+/* Images */
+/* line 3, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+img.leap {
+  opacity: 0.90;
+  filter: alpha(opacity=90);
+  width: 227px; }
+
+/* line 8, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+#left-leap {
+  float: left; }
+
+/* line 9, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+#right-leap {
+  float: right; }
+
+/* line 11, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+img.headshot {
+  width: 100px; }
+
+/* line 14, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+#headshot-div {
+  margin-bottom: 3px; }
+
+/* line 18, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+header a:hover img {
+  box-shadow: 0px 0px 0px transparent;
+  border-radius: 0px; }
+
+/* Fonts */
+/* line 21, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+header h1 {
+  font-size: 2.75em;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding-top: 1em;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+/* line 30, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+header h1 a {
+  color: #333; }
+
+/* line 31, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+header h1 a:hover {
+  color: #000; }
+
+/* line 32, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+#tweak-w {
+  letter-spacing: -6px; }
+
+/* line 35, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+header h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #222; }
+
+/* Other */
+/* line 44, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+header {
+  overflow: auto;
+  padding-bottom: 1em; }
+
+/* line 49, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+header hr {
+  margin-top: 2em; }
+
+/* line 53, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+#title-div {
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 58, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+#subtitles {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+/* Anchor link... javascript messes up position??? */
+/* line 65, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -33px;
+  visibility: hidden; }
+
+/* Basic jQuery Slider essential styles */
+/* line 68, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ul.bjqs {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: none; }
+
+/* line 69, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+li.bjqs-slide {
+  position: absolute;
+  display: none; }
+
+/* line 70, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ul.bjqs-controls {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999; }
+
+/* line 71, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ul.bjqs-controls.v-centered li a {
+  position: absolute; }
+
+/* line 72, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ul.bjqs-controls.v-centered li.bjqs-next a {
+  right: 0; }
+
+/* line 73, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ul.bjqs-controls.v-centered li.bjqs-prev a {
+  left: 0; }
+
+/* line 74, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ol.bjqs-markers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+/* line 75, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ol.bjqs-markers.h-centered {
+  text-align: center; }
+
+/* line 76, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ol.bjqs-markers li {
+  display: inline; }
+
+/* line 77, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ol.bjqs-markers li a {
+  display: inline-block; }
+
+/* line 78, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+p.bjqs-caption {
+  display: block;
+  width: 96%;
+  margin: 0;
+  padding: 2%;
+  position: absolute;
+  bottom: 0; }
+
+/* line 79, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_header.css.scss */
+ul.bjqs {
+  z-index: 1000;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7); }
+
+/* line 1, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_navbar.css.scss */
+nav {
+  position: relative;
+  width: 100%;
+  max-width: 940px;
+  background-color: #FFF;
+  text-align: center;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  line-height: 1em;
+  border-bottom: 1px dashed #ccc;
+  border-top: 1px dashed #ccc; }
+
+/* line 13, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_navbar.css.scss */
+nav ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 18, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_navbar.css.scss */
+nav li {
+  padding-left: 1em;
+  display: inline-block; }
+
+/* line 23, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_navbar.css.scss */
+nav li a {
+  color: #333; }
+
+/* line 26, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_navbar.css.scss */
+nav .current a {
+  text-decoration: bold; }
+
+/* line 30, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_navbar.css.scss */
+nav li a:hover,
+nav li a.selected {
+  text-decoration: underline; }
+
+/* line 1, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_news.css.scss */
+.news {
+  line-height: 1.1; }
+
+/* line 5, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_news.css.scss */
+.news-item {
+  min-height: 100px;
+  padding-top: 10px; }
+
+/* line 10, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_news.css.scss */
+.news-item p {
+  margin-left: 1em;
+  margin-top: 0.5em; }
+
+/* line 15, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_news.css.scss */
+.news-item img {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+  float: right;
+  max-width: 200px;
+  max-height: 100px; }
+
+/* line 22, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_news.css.scss */
+.no_shadow {
+  box-shadow: 0px 0px 0px !important; }
+
+/* line 26, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/_news.css.scss */
+date {
+  width: 100%;
+  display: block;
+  font-family: Helvetica;
+  font-size: 0.8em;
+  line-height: 1;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
+/* line 1, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+#about-div {
+  width: 100%;
+  height: 150px;
+  display: block; }
+
+/* Headshot */
+/* line 8, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+#headshot-div {
+  float: right;
+  width: 49.5%;
+  margin: 0;
+  padding: 0; }
+
+/* line 14, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+#headshot {
+  max-width: 200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7); }
+
+/* Address */
+/* line 23, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+#address-div {
+  float: left;
+  width: 49.5%;
+  margin: 0;
+  padding: 0; }
+
+/* line 29, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+address {
+  width: 200px;
+  height: 150px;
+  display: block;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1em;
+  font-style: normal;
+  vertical-align: middle; }
+
+/* line 40, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+address ul {
+  padding: 0 0 0 10px; }
+
+/* line 43, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+address ul + li {
+  list-style: none;
+  padding: 0; }
+
+/* line 47, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+address li {
+  list-style: none;
+  line-height: 1.2em; }
+
+/* line 52, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+address a {
+  color: #333; }
+
+/* line 53, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+address a:hover {
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s; }
+
+/* line 60, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+p {
+  text-indent: 1em; }
+
+/* line 61, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/about.css.scss */
+p + p {
+  text-indent: 0em; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 124, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+/* line 132, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 143, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 152, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 168, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 182, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 198, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 204, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 213, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 238, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  /* line 245, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  /* line 250, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 254, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 262, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  /* line 268, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 274, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  /* line 278, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  /* line 283, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+  /* line 291, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 298, /Users/ryantaylor/Projects/rwtaylor.github.io/source/css/main.css.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
