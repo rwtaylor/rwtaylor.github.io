@@ -1,0 +1,8 @@
+- name: News
+  link: index.html
+- name: About
+  link: about.html
+- name: Research
+  link: research.html
+- name: Photography
+  link: photography.html

@@ -1,3 +1,4 @@
 
 //= require "bjqs-1.3.min.js"
-//= require "header"
+//= require "_header"
+//= require "_nav"

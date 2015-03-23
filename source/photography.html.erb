@@ -1,0 +1,19 @@
+---
+title: Dr. Ryan W. Taylor
+description: "I study contemporary evolution in wild populations. I'm currently a postdoc in Dmitri Petrov's lab at Stanford."
+---
+
+<h2>Wildlife Photography</h2>
+<hr />
+
+<% data.photo_categories.each do |top| %>
+  <div class="photo-grid">
+    <a href="<%= top.base + ".html" %>"><h3><%= top.title%></h3>
+        <ul>
+          <% top.thumbs.each do |thumb| %>
+          <li><img src="<%=thumbextent('img/' + top.base + '/' + thumb.path, '300x200')%>"  alt="<%=thumb.alt%>"></li>
+          <% end %>
+        </ul>
+    </a>
+  </div>
+<% end %>

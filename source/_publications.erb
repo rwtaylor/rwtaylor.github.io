@@ -1,0 +1,9 @@
+
+<h3>Publications</h3>
+<ul class="pubs">
+  <% data.publications.each do |pub| %>
+  <li>
+    <%= pub.authors %> <%= pub.title %>. <%= pub.year %>. <a href = "<%= pub.link %>"> <%= pub.journal %> </a>. <a href = "<%= pub.pdf %>"> PDF </a>
+  </li>
+  <% end %>
+</ul> <!-- pubs -->

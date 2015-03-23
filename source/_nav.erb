@@ -1,0 +1,11 @@
+<ul>
+  <% data.nav.each do |nav_element| %>
+    <li>
+    <% if nav_element.link == current_page.path%>
+      <a class="current" href="<%=nav_element.link%>"><%=nav_element.name%></a>
+    <% else %>
+      <a href="<%=nav_element.link%>"><%=nav_element.name%></a>
+    <% end %>
+    </li>
+  <% end %>
+</ul>

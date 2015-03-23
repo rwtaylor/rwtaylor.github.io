@@ -1,0 +1,39 @@
+- title: Top Birds
+  base: top-birds
+  thumbs:
+    - path: Grebe.jpg
+      alt: Grebe
+    - path: More!.jpg
+      alt: Parent american dipper feeding a baby
+    - path: Annas.jpg
+      alt: "Anna's hummingbird"
+    - path: Barred.jpg
+      alt: Barred owl
+    - path: Dive.jpg
+      alt: Mergansers underwater
+- title: Top Mammals
+  base: top-mammals
+  thumbs:
+    - path: Yawn.jpg
+      alt: Lynx yawning
+    - path: Lynx_Sitting.jpg
+      alt: Lynx sitting
+    - path: Scream.jpg
+      alt: Arctic groundsquirrel
+    - path: Muskrat.jpg
+      alt: Muskrat swimming
+    - path: Dall_Sheep.jpg
+      alt: Dall sheep and kid
+- title: Great Squirrels
+  base: great-squirrels
+  thumbs:
+    - path: Rattle.jpg
+      alt: Red squirrel rattleing
+    - path: Kid.jpg
+      alt: Juvenile red squirrel
+    - path: Look.jpg
+      alt: Red squirrel looking
+    - path: Curiosity.jpg
+      alt: Curious red squirrel
+    - path: Tree_Frog.jpg
+      alt: Red squirrel posing like a tree frog

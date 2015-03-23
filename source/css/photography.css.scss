@@ -1,0 +1,30 @@
+/* Photo Grid */
+.photo-grid ul li {
+	list-style: none;
+	display: inline;
+}
+.photo-grid ul {
+	padding:0;
+	text-align:center;
+}
+.photo-grid ul img {
+	max-width:17%;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, .6);
+	border-radius: 0px;
+}
+.photo-grid h3{
+	z-index:100;
+	top:55px;
+	font-size:3em;
+	font-family:Helvetica;
+	color:white;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	             0px 8px 13px rgba(0,0,0,0.1),
+	             0px 18px 23px rgba(0,0,0,0.1);
+	position:relative;
+	text-align:center;
+	vertical-align:center;
+	padding:0;
+	margin:0;
+	line-height:0;
+}

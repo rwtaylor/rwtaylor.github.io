@@ -46,7 +46,36 @@ set :html, :layout_engine => :erb
 ###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+activate :automatic_image_sizes
+
+activate :imageoptim do |options|
+  # Use a build manifest to prevent re-compressing images between builds
+  options.manifest = true
+
+  # Silence problematic image_optim workers
+  options.skip_missing_workers = true
+
+  # Cause image_optim to be in shouty-mode
+  options.verbose = false
+
+  # Setting these to true or nil will let options determine them (recommended)
+  options.nice = true
+  options.threads = true
+
+  # Image extensions to attempt to compress
+  options.image_extensions = %w(.png .jpg .gif .svg)
+
+  # Compressor worker options, individual optimisers can be disabled by passing
+  # false instead of a hash
+  options.advpng    = { :level => 4 }
+  options.gifsicle  = { :interlace => false }
+  options.jpegoptim = { :strip => ['all'], :max_quality => 100 }
+  options.jpegtran  = { :copy_chunks => false, :progressive => true, :jpegrescan => true }
+  options.optipng   = { :level => 6, :interlace => false }
+  options.pngcrush  = { :chunks => ['alla'], :fix => false, :brute => false }
+  options.pngout    = { :copy_chunks => false, :strategy => 0 }
+  options.svgo      = {}
+end
 
 # Reload the browser automatically whenever files change
 # configure :development do
@@ -54,11 +83,36 @@ set :html, :layout_engine => :erb
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  # Thumbnails
+  
+  def thumbextent (path, thumb_size)
+    split_path = path.split(".")
+    thumb_path = split_path[0] + "_" + thumb_size + "_ext" + "." + split_path[1]
+    if !File.file?('source/' + thumb_path) or File.mtime('source/' + thumb_path) < File.mtime('source/' + path)
+      image = MiniMagick::Image.open('source/' + path)
+      image.combine_options do |c|
+        c.thumbnail(thumb_size)
+        c.gravity('center')
+        c.extent(thumb_size)
+      end
+      image.write('source/' + thumb_path)
+    end
+    thumb_path
+  end
+  
+  def thumbnail (path, thumb_size)
+    split_path = path.split(".")
+    thumb_path = split_path[0] + "_" + thumb_size + "." + split_path[1]
+    if !File.file?(thumb_path) or File.mtime(thumb_path) < File.mtime(path)
+      image = MiniMagick::Image.open(path)
+      image.resize(thumb_size)
+      image.write(thumb_path)
+    end
+    thumb_path
+  end
+  
+end
 
 set :css_dir, 'css'
 
@@ -72,13 +126,13 @@ configure :build do
   # activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
