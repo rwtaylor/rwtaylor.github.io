@@ -3,7 +3,7 @@ This is just a landing page pointing to some example repositories (an extension 
 See [https://ryantaylor.net](https://ryantaylor.net) for my website.
 
 Bioinformatic Pipelines
-  * 
+  * See my [nextflow-pipeline repository](https://github.com/rwtaylor/nextflow-pipelines)
 
 Statistics and Data Analysis
   * [Re-analysis of some chipmunk personality data](https://github.com/rwtaylor/2015-chipmunk)
